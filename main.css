@@ -1,0 +1,71 @@
+html {box-sizing: border-box}
+*,*::before,*::after{box-sizing: inherit}
+
+ body {
+    font-family: fantasy;
+    margin: 25px;
+ }       
+ 
+body:after {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/circle.jpg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    max-width: 1000px;
+    z-index: -5;
+    opacity: .2;
+}    
+
+.FMA {
+    width: 950px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(42, 42, 42);
+    font-weight: bolder;
+}
+
+h3 {
+    background-color: darkred;
+    color: beige;
+    padding: 10px;
+    margin: 0 auto;
+    width: 650px;
+    cursor: pointer;
+}
+
+.fold {
+    position: relative;
+    max-height: 0;
+    overflow-y: auto;
+	transition-property: all;
+	transition-duration: .5s;
+}
+
+.fold.open {
+    max-height: 350px;
+    background-color: white;
+}
+
+p {
+    margin-right:220px; 
+    border: solid 1px darkred;
+    padding: 5px;
+}
+
+img {
+   position: absolute;
+   top: 15px;
+   right: 0;
+   border: solid 2px darkred;
+}
